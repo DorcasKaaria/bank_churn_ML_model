@@ -1,0 +1,35 @@
+# Bank Churn Prediction Model
+
+## Overview
+
+This project builds a predictive machine learning pipeline using XGBoost to identify bank customers at high risk of churning (Exited = 1). 
+
+By analyzing customer demographics, account details, and engagement behaviors, the model enables proactive customer retention strategies.
+
+## Key Findings & EDA 
+
+InsightsAge: Older customers exhibit significantly higher churn rates compared to younger demographics.
+
+Engagement: Disengaged customers (IsActiveMember = 0) represent the majority of exits.
+
+Credit Score: Customers in the low credit band ($\le 400$) experienced a 100% churn rate.
+
+Geography: Customers residing in Germany showed the highest proportion of churn compared to France and Spain.
+
+## Workflow & Methodology
+
+Data Preprocessing & Feature Engineering:One-Hot Encoded categorical variables (Gender, Geography, and created CreditBand).Scaled numerical features using StandardScaler.Handling Class Imbalance:Applied scale_pos_weight (~3.09 to 3.86) to address the ~4:1 ratio between retained and churned customers.
+
+Model Optimization:Tuned hyperparameters using RandomizedSearchCV targeting ROC-AUC and F1-Score.Model explainability analyzed using SHAP (SHapley Additive exPlanations) values.
+
+## Performance Metrics
+
+Accuracy: ~83.75%
+
+ROC-AUC Score: ~86.50%
+
+Churn (Class 1) Recall: 72%
+
+Churn (Class 1) Precision: 57%
+
+Churn (Class 1) F1-Score: 0.63
