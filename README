@@ -23,7 +23,7 @@ One-Hot Encoded categorical variables (Gender, Geography, and created CreditBand
 Scaled numerical features using StandardScaler.
 Handling Class Imbalance:Applied scale_pos_weight (~3.09 to 3.86) to address the ~4:1 ratio between retained and churned customers.
 
-Model Optimization:
+## Model Optimization:
 Tuned hyperparameters using RandomizedSearchCV targeting ROC-AUC and F1-Score.
 Model explainability analyzed using SHAP (SHapley Additive exPlanations) values.
 
