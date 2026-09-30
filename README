@@ -12,7 +12,7 @@ InsightsAge: Older customers exhibit significantly higher churn rates compared t
 
 Engagement: Disengaged customers (IsActiveMember = 0) represent the majority of exits.
 
-Credit Score: Customers in the low credit band ($\le 400$) experienced a 100% churn rate.
+Credit Score: Customers in the low credit band <400 experienced a 100% churn rate.
 
 Geography: Customers residing in Germany showed the highest proportion of churn compared to France and Spain.
 
